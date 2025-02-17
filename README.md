@@ -14,10 +14,18 @@ FrontEnd: N/A
    ```
    - Verify installation by running: `choco --version`
 
-2. Install pyenv-win using Chocolatey
-   - In the same PowerShell (Admin) window, run:
+2. Install Required Tools
    ```powershell
-   choco install pyenv-win
+   # Install Make
+   choco install make
+   
+   # Install Git Bash
+   choco install git.install
+   
+   # Verify installations
+   make --version
+   git --version
    ```
-   - Restart your terminal
-   - Verify installation by running: `pyenv --version`
+
+3. Python Package Management
+   - For information about installing Python and managing packages using UV (fast Python package manager), see [UV Package Manager](docs/uv/uv.md)
